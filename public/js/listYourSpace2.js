@@ -10,8 +10,6 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected! - list-your-space-2.js");
-	//$("#entireHomeBtn").unbind().click(entireHomeClicked);
-	//$("#privateRoomBtn").unbind().click(privateRoomClicked);
 
 	// get local storage variables about user
 	var listingProcess = localStorage.getItem('listingProcess');
@@ -39,12 +37,6 @@ function initializePage() {
 	oFormObject.elements["email"].value = userEmail;
 	oFormObject.elements["phone"].value = userPhone;
 
-}
-
-function privateRoomClicked(e){
-	var housingType = 'private';
-	localStorage.setItem('type', housingType);
-	$("#privateRoomPanel").slideToggle("slowly");
 }
 
 function onsubmitform(e){

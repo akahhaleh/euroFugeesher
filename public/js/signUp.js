@@ -10,22 +10,6 @@ $(document).ready(function() {
  */
 function initializePage() { 
 	console.log("Javascript connected! - signUp.js");
-	//$("#entireHomeBtn").unbind().click(entireHomeClicked);
-	//$("#privateRoomBtn").unbind().click(privateRoomClicked);
-}
-
-
-function entireHomeClicked(e){
-	var housingType = 'entire';
-	localStorage.setItem('type', housingType);
-	$("#entireHomePanel").slideToggle("slowly");
-
-}
-
-function privateRoomClicked(e){
-	var housingType = 'private';
-	localStorage.setItem('type', housingType);
-	$("#privateRoomPanel").slideToggle("slowly");
 }
 
 function onsubmitform(e){
@@ -35,7 +19,6 @@ function onsubmitform(e){
     var password =  document.getElementById("password").value;
     var phone =  document.getElementById("telephone").value; 
 	
-	//oFormObject = document.forms['sign-up-form'];
 	localStorage.setItem('user-firstName',fn);
 	localStorage.setItem('user-lastName',ln);
 	localStorage.setItem('user-email',email);

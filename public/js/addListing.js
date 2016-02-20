@@ -10,8 +10,6 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected! - add-listing.js");
-	//$("#entireHomeBtn").unbind().click(entireHomeClicked);
-	//$("#privateRoomBtn").unbind().click(privateRoomClicked);
 
 	// get local storage variables about user
 	var listingProcess = localStorage.getItem('listingProcess');
@@ -29,12 +27,6 @@ function initializePage() {
 	// Display user name in header
 	document.getElementById('greetingUser').innerHTML = "Congrats "+userFirstName+"! Your listing has been submitted";
 
-}
-
-function privateRoomClicked(e){
-	var housingType = 'private';
-	localStorage.setItem('type', housingType);
-	$("#privateRoomPanel").slideToggle("slowly");
 }
 
 function onsubmitform(e){
